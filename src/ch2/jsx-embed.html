@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+<script type="text/babel">
+const item = "SD card"
+const value = 1200
+const message = <h1>{item} - {value} yen</h1>
+const elem = document.getElementById('root')
+ReactDOM.render(message, elem)
+</script>
+
+</body>
+</html>

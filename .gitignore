@@ -1,0 +1,7 @@
+src/**/node_modules
+*.tmp
+*.bak
+*.swp
+.DS_Store
+.DS_Store?
+Thumbs.db
