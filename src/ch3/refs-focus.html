@@ -17,22 +17,22 @@
       render() {
         const doSubmit = e => doSubmit(e)
         const doChange = e => doChange(e)
-        return (<form onSubmit={doSubmit} >
+        return (<form onSubmit={doSubmit}>
           <label>Your name:<br/>
             <input type='text' name='user'
-              ref={(i) => { this.user = i }}
+              ref={(i) => { this.user=i }}
               value={this.state.user}
               onChange={doChange} />
           </label><br/>
           <label>Password:<br/>
-            <input type='pass' name='pass'
-              ref={(i)=>{this.pass = i}}
+            <input type='password' name='pass'
+              ref={(i) => { this.pass = i }}
               value={this.state.pass}
               onChange={doChange} />
           </label><br />
           <input type='submit' value='submit' />
           </form>)
-      } // render
+      }
       doChange(e) {
         const key = e.target.name
         this.setState({
@@ -53,6 +53,7 @@
         window.alert(JSON.stringify(this.state))
       }
     } // Component
+
     ReactDOM.render(<div><LoginForm /></div>,
       document.getElementById('root'))
   </script>
